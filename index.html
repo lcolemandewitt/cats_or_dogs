@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Vote for cats or dogs pUHLEASE.</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Gaegu" rel="stylesheet">
+    <script src="index.js" type="text/javascript"></script>
+  </head>
+
+  <body>
+    <div class="hero-image">
+      <div class="hero-text">
+      <h1>Let's settle this score once and for all!</h1>
+      <p><mark>What animal do you prefer: cats or dogs?</mark></p>
+      <button onclick="toggleVoteContainer()">Vote</button>
+      </div>
+    </div>
+
+    <div id="vote-container">
+
+      <div id="cats-container" class="voting">
+        <div class="carousel" id="cats-carousel" onclick="changeImage(this)">
+          <img src="https://gifprint.s3.amazonaws.com/p/gif/2604/fbdb2780ad70013171c94a728aaf7bad.gif" alt="cat image"/>
+        </div>
+
+        <div class="likes">
+          <i class="far fa-thumbs-up" onclick="increaseLikes(this)">0</i> Likes
+        </div>
+
+      </div>
+
+      <div id="dogs-container" class="voting">
+        <div class="carousel" id="dogs-carousel" onclick="changeImage(this)">
+          <img src="https://www.switchvideo.com/wp-content/uploads/2013/04/Dogs-Playing.jpg" alt="dog image"/>
+        </div>
+
+        <div class="likes">
+          <i class="far fa-thumbs-up" onclick="increaseLikes(this)">0</i> Likes
+        </div>
+
+      </div>
+
+    </div>
+  </body>
+</html>
